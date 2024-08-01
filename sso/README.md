@@ -26,14 +26,14 @@ To implement SSO, the following technical requirements are necessary:
 
 ### Generate the JWT
 
-To generate a JWT, use the secret key provided by Fpass. Below are code examples in Python and Node.js to generate a JWT with the following payload:
+To generate a JWT, use the secret key and whitelabel key provided by Fpass. Below are code examples in Python and Node.js to generate a JWT with the following payload:
 
 ```json
 {
-    "userId": "exampleUserId",
-    "whitelabel": "exampleWhitelabel",
+    "userId": "example-user-id",
+    "whitelabel": "your-whitelabel-key",
     "ssoVersion": "v2.0.0",
-    "iss": "exampleIss"
+    "iss": "your-whitelabel-key"
 }
 ```
 
@@ -48,10 +48,10 @@ SECRET_KEY = 'your_secret_key'
 
 # Create the payload
 payload = {
-    'userId': 'exampleUserId',
-    'whitelabel': 'exampleWhitelabel',
+    'userId': 'example-user-id',
+    'whitelabel': 'your-whitelabel-key',
     'ssoVersion': 'v2.0.0',
-    'iss': 'exampleIss',
+    'iss': 'your-whitelabel-key',
     'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1)  # Token expires in 1 hour
 }
 
@@ -71,10 +71,10 @@ const SECRET_KEY = 'your_secret_key';
 
 // Create the payload
 const payload = {
-    userId: 'exampleUserId',
-    whitelabel: 'exampleWhitelabel',
+    userId: 'example-user-id',
+    whitelabel: 'your-whitelabel-key',
     ssoVersion: 'v2.0.0',
-    iss: 'exampleIss',
+    iss: 'your-whitelabel-key',
     exp: Math.floor(Date.now() / 1000) + (60 * 60) // Token expires in 1 hour
 };
 
