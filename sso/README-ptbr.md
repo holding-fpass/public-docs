@@ -100,7 +100,7 @@ def login():
     # Gerando o JWT
     token = jwt.encode(payload, SECRET_KEY, algorithm='HS256')
     # Redirecionando o usuário
-    return redirect(f'https://fpass.com.br?jwt={token}')
+    return redirect(f'https://url-do-seu-whitelabel.com.br?jwt={token}')
 
 if __name__ == '__main__':
     app.run()
@@ -116,7 +116,7 @@ app.get('/login', (req, res) => {
     // Gerando o JWT
     const token = jwt.sign(payload, SECRET_KEY);
     // Redirecionando o usuário
-    res.redirect(`https://fpass.com.br?jwt=${token}`);
+    res.redirect(`https://url-do-seu-whitelabel.com.br?jwt=${token}`);
 });
 
 app.listen(3000, () => {
