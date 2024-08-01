@@ -30,10 +30,10 @@ Para gerar um JWT, utilize a chave secreta fornecida pela Fpass. Abaixo estão e
 
 ```json
 {
-    'userId': 'exemploUserId',
-    'whitelabel': 'exemploWhitelabel',
-    'ssoVersion': 'v2.0.0',
-    'iss': 'exemploIss'
+    "userId": "exemploUserId",
+    "whitelabel": "exemploWhitelabel",
+    "ssoVersion": "v2.0.0",
+    "iss": "exemploIss"
 }
 ```
 
