@@ -1,4 +1,3 @@
-```markdown
 ## Introduction
 
 The Fpass platform is an education system. The main goal of Single Sign-On (SSO) is to allow users to log into the Fpass platform from another application, providing a smoother and more secure user experience.
@@ -146,4 +145,3 @@ Common issues that may occur during integration:
 ## Conclusion
 
 By following the steps detailed in this documentation, you can implement SSO on the Fpass platform efficiently and securely. Be sure to follow all steps correctly to ensure a successful integration.
-```
