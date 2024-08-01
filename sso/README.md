@@ -100,7 +100,7 @@ def login():
     # Generate the JWT
     token = jwt.encode(payload, SECRET_KEY, algorithm='HS256')
     # Redirect the user
-    return redirect(f'https://your-whitelabel-url.com.br?jwt={token}')
+    return redirect(f'https://your-whitelabel-url.com?jwt={token}')
 
 if __name__ == '__main__':
     app.run()
@@ -116,7 +116,7 @@ app.get('/login', (req, res) => {
     // Generate the JWT
     const token = jwt.sign(payload, SECRET_KEY);
     // Redirect the user
-    res.redirect(`https://your-whitelabel-url.com.br?jwt=${token}`);
+    res.redirect(`https://your-whitelabel-url.com?jwt=${token}`);
 });
 
 app.listen(3000, () => {
