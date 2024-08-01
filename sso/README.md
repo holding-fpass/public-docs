@@ -1,94 +1,95 @@
-## Introdução
+```markdown
+## Introduction
 
-A plataforma Fpass é um sistema de educação. O principal objetivo do Single Sign-On (SSO) é permitir que usuários façam login na plataforma Fpass a partir de outro aplicativo, proporcionando uma experiência de usuário mais fluida e segura.
+The Fpass platform is an education system. The main goal of Single Sign-On (SSO) is to allow users to log into the Fpass platform from another application, providing a smoother and more secure user experience.
 
-## Visão Geral do SSO
+## SSO Overview
 
-O SSO é baseado em JSON Web Tokens (JWT). Abaixo estão listadas e detalhadas as propriedades necessárias no payload do JWT:
+SSO is based on JSON Web Tokens (JWT). Below are listed and detailed the required properties in the JWT payload:
 
-- `userId`: (string) Identificador único do usuário.
-- `whitelabel`: (string) Nome do parceiro ou aplicação.
-- `ssoVersion`: (string) Deve ser "v2.0.0".
-- `iss`: (string) Emissor do token.
+- `userId`: (string) Unique identifier of the user.
+- `whitelabel`: (string) Name of the partner or application.
+- `ssoVersion`: (string) Must be "v2.0.0".
+- `iss`: (string) Issuer of the token.
 
 ## JWT
 
-JWT (JSON Web Token) é um padrão aberto (RFC 7519) que define uma maneira compacta e segura de transmitir informações entre as partes como um objeto JSON. Estas informações podem ser verificadas e confiáveis porque são assinadas digitalmente. Para mais informações, visite [jwt.io](https://jwt.io).
+JWT (JSON Web Token) is an open standard (RFC 7519) that defines a compact and secure way to transmit information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. For more information, visit [jwt.io](https://jwt.io).
 
-## Requisitos Técnicos
+## Technical Requirements
 
-Para implementar o SSO, são necessários os seguintes requisitos técnicos:
+To implement SSO, the following technical requirements are necessary:
 
-1. Conhecimento da chave secreta compartilhada entre o parceiro e a Fpass.
-2. Capacidade de gerar um JWT utilizando essa chave secreta.
+1. Knowledge of the shared secret key between the partner and Fpass.
+2. Ability to generate a JWT using this secret key.
 
-## Passos para Implementação
+## Implementation Steps
 
-### Gerar o JWT
+### Generate the JWT
 
-Para gerar um JWT, utilize a chave secreta fornecida pela Fpass. Abaixo estão exemplos de código em Python e Node.js para gerar um JWT com o seguinte payload:
+To generate a JWT, use the secret key provided by Fpass. Below are code examples in Python and Node.js to generate a JWT with the following payload:
 
 ```json
 {
-    "userId": "exemploUserId",
-    "whitelabel": "exemploWhitelabel",
+    "userId": "exampleUserId",
+    "whitelabel": "exampleWhitelabel",
     "ssoVersion": "v2.0.0",
-    "iss": "exemploIss"
+    "iss": "exampleIss"
 }
 ```
 
-#### Exemplo em Python
+#### Python Example
 
 ```python
 import jwt
 import datetime
 
-# Definindo a chave secreta
-SECRET_KEY = 'sua_chave_secreta'
+# Define the secret key
+SECRET_KEY = 'your_secret_key'
 
-# Criando o payload
+# Create the payload
 payload = {
-    'userId': 'exemploUserId',
-    'whitelabel': 'exemploWhitelabel',
+    'userId': 'exampleUserId',
+    'whitelabel': 'exampleWhitelabel',
     'ssoVersion': 'v2.0.0',
-    'iss': 'exemploIss',
-    'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1)  # Token expira em 1 hora
+    'iss': 'exampleIss',
+    'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1)  # Token expires in 1 hour
 }
 
-# Gerando o JWT
+# Generate the JWT
 token = jwt.encode(payload, SECRET_KEY, algorithm='HS256')
 
 print(token)
 ```
 
-#### Exemplo em Node.js
+#### Node.js Example
 
 ```javascript
 const jwt = require('jsonwebtoken');
 
-// Definindo a chave secreta
-const SECRET_KEY = 'sua_chave_secreta';
+// Define the secret key
+const SECRET_KEY = 'your_secret_key';
 
-// Criando o payload
+// Create the payload
 const payload = {
-    userId: 'exemploUserId',
-    whitelabel: 'exemploWhitelabel',
+    userId: 'exampleUserId',
+    whitelabel: 'exampleWhitelabel',
     ssoVersion: 'v2.0.0',
-    iss: 'exemploIss',
-    exp: Math.floor(Date.now() / 1000) + (60 * 60) // Token expira em 1 hora
+    iss: 'exampleIss',
+    exp: Math.floor(Date.now() / 1000) + (60 * 60) // Token expires in 1 hour
 };
 
-// Gerando o JWT
+// Generate the JWT
 const token = jwt.sign(payload, SECRET_KEY);
 
 console.log(token);
 ```
 
-### Redirecionar o Usuário
+### Redirect the User
 
-Após gerar o JWT, redirecione o usuário para a URL da Fpass com o JWT gerado. Abaixo estão exemplos de código para esse redirecionamento em Python e Node.js.
+After generating the JWT, redirect the user to the Fpass URL with the generated JWT. Below are code examples for this redirection in Python and Node.js.
 
-#### Exemplo em Python
+#### Python Example
 
 ```python
 from flask import Flask, redirect
@@ -97,51 +98,52 @@ app = Flask(__name__)
 
 @app.route('/login')
 def login():
-    # Gerando o JWT
+    # Generate the JWT
     token = jwt.encode(payload, SECRET_KEY, algorithm='HS256')
-    # Redirecionando o usuário
+    # Redirect the user
     return redirect(f'https://fpass.com.br?jwt={token}')
 
 if __name__ == '__main__':
     app.run()
 ```
 
-#### Exemplo em Node.js
+#### Node.js Example
 
 ```javascript
 const express = require('express');
 const app = express();
 
 app.get('/login', (req, res) => {
-    // Gerando o JWT
+    // Generate the JWT
     const token = jwt.sign(payload, SECRET_KEY);
-    // Redirecionando o usuário
+    // Redirect the user
     res.redirect(`https://fpass.com.br?jwt=${token}`);
 });
 
 app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+    console.log('Server running on port 3000');
 });
 ```
 
-## Testes e Solução de Problemas
+## Testing and Troubleshooting
 
-### Testes
+### Testing
 
-Para garantir que a integração do SSO está funcionando corretamente, siga os seguintes passos:
+To ensure the SSO integration is working correctly, follow these steps:
 
-1. Gere o JWT com os dados corretos.
-2. Redirecione o usuário para a URL da Fpass com o JWT gerado.
-3. Verifique se o usuário é autenticado corretamente na plataforma.
+1. Generate the JWT with the correct data.
+2. Redirect the user to the Fpass URL with the generated JWT.
+3. Verify if the user is authenticated correctly on the platform.
 
-### Solução de Problemas
+### Troubleshooting
 
-Problemas comuns que podem ocorrer durante a integração:
+Common issues that may occur during integration:
 
-- **Token Expirado**: Certifique-se de que o campo `exp` no payload está configurado corretamente.
-- **Assinatura Inválida**: Verifique se a chave secreta utilizada para gerar o JWT está correta.
-- **Payload Incorreto**: Assegure-se de que todos os campos necessários estão presentes no payload.
+- **Expired Token**: Ensure that the `exp` field in the payload is set correctly.
+- **Invalid Signature**: Verify that the secret key used to generate the JWT is correct.
+- **Incorrect Payload**: Ensure that all required fields are present in the payload.
 
-## Conclusão
+## Conclusion
 
-Seguindo os passos detalhados nesta documentação, você poderá implementar o SSO na plataforma Fpass de maneira eficiente e segura. Certifique-se de seguir todos os passos corretamente para garantir uma integração bem-sucedida.
+By following the steps detailed in this documentation, you can implement SSO on the Fpass platform efficiently and securely. Be sure to follow all steps correctly to ensure a successful integration.
+```
