@@ -26,14 +26,14 @@ Para implementar o SSO, são necessários os seguintes requisitos técnicos:
 
 ### Gerar o JWT
 
-Para gerar um JWT, utilize a chave secreta fornecida pela Fpass. Abaixo estão exemplos de código em Python e Node.js para gerar um JWT com o seguinte payload:
+Para gerar um JWT, utilize a chave secreta e chave do whitelabel fornecida pela Fpass. Abaixo estão exemplos de código em Python e Node.js para gerar um JWT com o seguinte payload:
 
 ```json
 {
-    "userId": "exemploUserId",
-    "whitelabel": "exemploWhitelabel",
+    "userId": "exemplo-user-id",
+    "whitelabel": "exemplo-chave-whitelabel",
     "ssoVersion": "v2.0.0",
-    "iss": "exemploIss"
+    "iss": "exemplo-chave-whitelabel"
 }
 ```
 
@@ -48,10 +48,10 @@ SECRET_KEY = 'sua_chave_secreta'
 
 # Criando o payload
 payload = {
-    'userId': 'exemploUserId',
-    'whitelabel': 'exemploWhitelabel',
+    'userId': 'exemplo-user-id',
+    'whitelabel': 'exemplo-chave-whitelabel',
     'ssoVersion': 'v2.0.0',
-    'iss': 'exemploIss',
+    'iss': 'exemplo-chave-whitelabel',
     'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1)  # Token expira em 1 hora
 }
 
@@ -71,10 +71,10 @@ const SECRET_KEY = 'sua_chave_secreta';
 
 // Criando o payload
 const payload = {
-    userId: 'exemploUserId',
-    whitelabel: 'exemploWhitelabel',
+    userId: 'exemplo-user-id',
+    whitelabel: 'exemplo-chave-whitelabel',
     ssoVersion: 'v2.0.0',
-    iss: 'exemploIss',
+    iss: 'exemplo-chave-whitelabel',
     exp: Math.floor(Date.now() / 1000) + (60 * 60) // Token expira em 1 hora
 };
 
