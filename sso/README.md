@@ -24,6 +24,9 @@ To implement SSO, the following technical requirements are necessary:
 
 ## Implementation Steps
 
+Flowchart
+![Flowchart](https://github.com/holding-fpass/public-docs/blob/main/sso/assets/flowchart.png)
+
 ### Generate the JWT
 
 To generate a JWT, use the secret key and whitelabel key provided by Fpass. Below are code examples in Python and Node.js to generate a JWT with the following payload:
