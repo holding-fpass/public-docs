@@ -24,7 +24,7 @@ To implement SSO, the following technical requirements are necessary:
 
 ## Implementation Steps
 
-Flowchart
+### Flowchart
 ![Flowchart](https://github.com/holding-fpass/public-docs/blob/main/sso/assets/flowchart.png)
 
 ### Generate the JWT
