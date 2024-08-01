@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Bem-vindo ao repositório de Documentação de Integração Fpass. A Fpass é uma plataforma de educação (Fintech). Este repositório fornece a documentação necessária para integrar com a Fpass, cobrindo várias funcionalidades para aprimorar sua aplicação.
+Bem-vindo ao repositório de Documentação de Integração Fpass. A Fpass é uma plataforma de educação (Fintech). Este repositório fornece a documentação necessária para integrar com a Fpass.
 
 ## Funcionalidades
 
