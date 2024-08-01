@@ -4,7 +4,7 @@
 
 Welcome to the Fpass Integration Documentation repository. Fpass is an education platform (EdTech). This repository provides the necessary documentation for integrating with Fpass.
 
-- [Documentation - Portuguese (Brazil)](https://github.com/holding-fpass/public-docs/blob/main/sso/README-ptbr.md)
+- [Documentation - Portuguese (Brazil)](https://github.com/holding-fpass/public-docs/blob/main/README-ptbr.md)
 
 ## Functionalities
 
