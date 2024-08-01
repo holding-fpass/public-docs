@@ -20,4 +20,4 @@ We welcome contributions to improve the Fpass integration documentation. If you 
 
 ## Support
 
-For support or questions regarding the Fpass integration, please contact our support team at support@fpass.com.
+For support or questions regarding the Fpass integration, please contact our support team at suporte@fpass.com.
