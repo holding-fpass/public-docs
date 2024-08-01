@@ -10,7 +10,7 @@ Bem-vindo ao repositório de Documentação de Integração Fpass. A Fpass é um
 
 Para informações detalhadas sobre como integrar o Single Sign On (SSO) da Fpass, consulte a seguinte documentação:
 
-- [Documentação de Single Sign On](https://github.com/holding-fpass/public-docs/blob/main/sso/README.md)
+- [Documentação de Single Sign On](https://github.com/holding-fpass/public-docs/blob/main/sso/README-ptbr.md)
 
 ## Contribuindo
 
