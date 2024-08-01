@@ -1,21 +1,23 @@
-# Documentação de Integração Fpass
+# Fpass Integration Documentation
 
-## Introdução
+## Introduction
 
-Bem-vindo ao repositório de Documentação de Integração Fpass. A Fpass é uma plataforma de educação (Edtech). Este repositório fornece a documentação necessária para integrar com a Fpass.
+Welcome to the Fpass Integration Documentation repository. Fpass is an education platform (EdTech). This repository provides the necessary documentation for integrating with Fpass.
 
-## Funcionalidades
+- [Documentation - Portuguese (Brazil)](https://github.com/holding-fpass/public-docs/blob/main/sso/README-ptbr.md)
+
+## Functionalities
 
 ### Single Sign On (SSO)
 
-Para informações detalhadas sobre como integrar o Single Sign On (SSO) da Fpass, consulte a seguinte documentação:
+For detailed information on how to integrate Fpass Single Sign On (SSO), please refer to the following documentation:
 
-- [Documentação de Single Sign On](https://github.com/holding-fpass/public-docs/blob/main/sso/README.md)
+- [Single Sign On Documentation](https://github.com/holding-fpass/public-docs/blob/main/sso/README.md)
 
-## Contribuindo
+## Contributing
 
-Aceitamos contribuições para melhorar a documentação de integração da Fpass. Se você tiver sugestões ou quiser adicionar novas seções, envie um pull request ou abra uma issue no GitHub.
+We welcome contributions to improve the Fpass integration documentation. If you have suggestions or want to add new sections, please submit a pull request or open an issue on GitHub.
 
-## Suporte
+## Support
 
-Para suporte ou dúvidas sobre a integração com a Fpass, entre em contato com nossa equipe de suporte pelo e-mail suporte@fpass.com.
+For support or questions regarding the Fpass integration, please contact our support team at support@fpass.com.
