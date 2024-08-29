@@ -18,7 +18,7 @@ Quando um evento é gerado, e existe webhooks cadastrados para receber tal tipo 
 
 
 ### Importante
-A URL do seu webhook deve estar exposta (pública) para a internet, de forma que a plataforma da Zoop a alcance e consiga enviar os eventos.
+A URL do seu webhook deve estar exposta (pública) para a internet, de forma que a plataforma a alcance e consiga enviar os eventos.
 
 ### Fluxo de retentativas de disparos
 Uma vez que a primeira tentativa de entrega não obtém sucesso, a platforma efetuará novos disparos dentro de poucos instantes. Após um número máximo de 3 tentativas sem sucesso, o evento entra em estado de falha na entrega. É de responsabilidade do consumidor manter a resiliência dos eventos e a deduplicação de eventos.
