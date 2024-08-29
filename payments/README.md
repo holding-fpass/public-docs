@@ -632,6 +632,6 @@ Below are the key properties associated with this event, including unique identi
 }
 ```
 
-### Conclusion
+## Conclusion
 This documentation has been created to provide a comprehensive and detailed overview of events related to payment transactions within the platform. 
 By following the steps outlined in this documentation, you can implement the Fpass platform's payment system efficiently and securely. Be sure to follow all steps correctly to ensure a successful integration.
