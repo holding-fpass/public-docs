@@ -489,9 +489,7 @@ Below are the key properties associated with this event, including unique identi
   "partnerId": "bca7d6c4-1b8a-4f25-99f4-d6a06f3b5f02",
   "type": "transaction.charged_back",
   "payload": {
-    "resourceId": "59a4c612-dc2e-4e88-9
-
-c58-fdbebc37f1e8",
+    "resourceId": "59a4c612-dc2e-4e88-9c58-fdbebc37f1e8",
     "resourceType": "transaction",
     "productId": "24c073d4-3f42-4a9c-b649-2e9f0f734dbf",
     "productType": "platform.subscription",
