@@ -56,7 +56,6 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
   - updatedAt: Data da última atualização da transação. (String, DateTime ISO 1601)
 - processedAt: Data de processamento do evento. (String, DateTime ISO 1601 | null)
 - retries: Número de tentativas de envio do evento. (Integer)
-- isProcessing: Indicador se o evento está em processamento. (Boolean)
 - metadata: Metadados adicionais do evento. (Object | null)
 - whitelabel: Identificador da plataforma whitelabel. (String)
 - createdAt: Data de criação do evento. (String, DateTime ISO 1601)
