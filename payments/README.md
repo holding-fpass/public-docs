@@ -31,6 +31,38 @@ The transaction payment event captures the essential details of a transaction wi
 
 Below are the key properties associated with this event, including unique identifiers, detailed information about the transaction, and specific data about the partner and whitelabel platform. These properties are essential for tracking, auditing, and managing transactions within the platform ecosystem.
 
+### Property Map
+- **resourceId**: Unique identifier of the event. (*String, UUID*)
+- **resourceType**: Type of resource associated with the event. (*String, "partner.event"*)
+- **partnerId**: Unique identifier of the partner. (*String, UUID*)
+- **type**: Type of event. (*String, "transaction.charged_back"*)
+- **payload**: Specific data of the transaction.
+  - **resourceId**: Unique identifier of the transaction. (*String, UUID*)
+  - **resourceType**: Type of resource within the payload, indicating it is a transaction. (*String, "transaction"*)
+  - **productId**: Unique identifier of the product associated with the transaction. (*String, UUID*)
+  - **productType**: Type of product associated. (*String, "platform.subscription"*)
+  - **status**: Status of the transaction. (*String, "charged_back"*)
+  - **couponId**: Identifier of the applied coupon, if any. (*String, UUID | null*)
+  - **transactionIds**: List of related transaction IDs. (*Array of Strings, UUID[]*)
+  - **currency**: Currency of the transaction. (*String, "BRL"*)
+  - **description**: Additional description. (*String*)
+  - **paymentMethod**: Payment method used. (*String, "credit"*)
+  - **value**: Transaction value in cents. (*Integer*)
+  - **splitProcessedAt**: Date when the value split was processed, if applicable. (*String, DateTime ISO 1601 | null*)
+  - **refundedAt**: Date of transaction refund. (*String, DateTime ISO 1601*)
+  - **userId**: Unique identifier of the user associated with the transaction. (*String, UUID*)
+  - **metadata**: Additional metadata. (*Object | null*)
+  - **whitelabel**: Identifier of the whitelabel platform. (*String*)
+  - **createdAt**: Date the transaction was created. (*String, DateTime ISO 1601*)
+  - **updatedAt**: Date of the last transaction update. (*String, DateTime ISO 1601*)
+- **processedAt**: Date the event was processed. (*String, DateTime ISO 1601 | null*)
+- **retries**: Number of event delivery attempts. (*Integer*)
+- **isProcessing**: Indicator if the event is being processed. (*Boolean*)
+- **metadata**: Additional metadata of the event. (*Object | null*)
+- **whitelabel**: Identifier of the whitelabel platform. (*String*)
+- **createdAt**: Date the event was created. (*String, DateTime ISO 1601*)
+- **updatedAt**: Date of the last event update. (*String, DateTime ISO 1601*)
+
 ### 1. **transaction.canceled**
 - **Description**: This event is triggered when a transaction is canceled (reversed). The cancellation is done by the platform at the user's request.
 
