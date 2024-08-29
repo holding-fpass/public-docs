@@ -31,7 +31,6 @@ O evento de pagamento de transação captura os detalhes essenciais de uma trans
 A seguir, são descritas as principais propriedades associadas a este evento, incluindo identificadores únicos, informações detalhadas sobre a transação e dados específicos sobre o parceiro e a plataforma whitelabel. Essas propriedades são essenciais para o rastreamento, auditoria e gerenciamento de transações dentro do ecossistema da plataforma.
 
 ### Mapa de propriedades
-#### Propriedades
 - resourceId: Identificador único do evento. (String, UUID)
 - resourceType: Tipo de recurso associado ao evento. (String, "partner.event")
 - partnerId: Identificador único do parceiro. (String, UUID)
