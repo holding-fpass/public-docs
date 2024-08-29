@@ -49,24 +49,23 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
-    "description": "Transação cancelada pelo usuário",
+    "description": null,
     "paymentMethod": "credit",
     "value": 49700,
     "splitProcessedAt": null,
     "refundedAt": null,
     "userId": "bd6b0ce2-3758-4feb-bacc-b86935a9e5e5",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -85,28 +84,27 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
     "resourceType": "transaction",
     "productId": "5e4c85b2-7d34-4694-ae62-8c9c4fb1a839",
     "productType": "platform.subscription",
-    "status": "disputed",
+    "status": "dispute",
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
-    "description": "Transação contestada pelo usuário",
+    "description": null,
     "paymentMethod": "credit",
     "value": 49700,
     "splitProcessedAt": null,
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -127,7 +125,7 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
     "resourceType": "transaction",
     "productId": "ecf6b3db-6c9e-4f5a-9a68-5a3e6b7322b3",
     "productType": "platform.subscription",
-    "status": "dispute_succeeded",
+    "status": "dispute",
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
@@ -135,20 +133,19 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
     "paymentMethod": "credit",
     "value": 49700,
     "splitProcessedAt": null,
-    "refundedAt": "2024-08-31T12:00:00.000Z",
+    "refundedAt": "2020-04-30T10:20:00.000Z",
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-31T12:00:00.000Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
-  "processedAt": "2024-08-31T12:15:00.000Z",
+  "processedAt": "2020-04-30T10:20:00.000Z",
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-31T12:20:00.000Z",
-  "updatedAt": "2024-08-31T12:20:00.000Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -180,17 +177,16 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -211,7 +207,7 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
     "resourceType": "transaction",
     "productId": "e4b2d6f8-4f5b-4c8b-8d6f-2f7a3c6d8b5a",
     "productType": "platform.subscription",
-    "status": "pre_authorization_succeeded",
+    "status": "pre_authorized",
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
@@ -222,19 +218,16 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "created
-
-At": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -266,17 +259,16 @@ At": "2024-08-29T21:07:11.022Z",
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -299,7 +291,7 @@ a6f8c7e",
     "resourceType": "transaction",
     "productId": "d4c7b6f8-5c6d-4b8a-9e7f-2d7c4f6b9a8d",
     "productType": "platform.subscription",
-    "status": "reversed",
+    "status": "refunded",
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
@@ -307,20 +299,19 @@ a6f8c7e",
     "paymentMethod": "credit",
     "value": 49700,
     "splitProcessedAt": null,
-    "refundedAt": "2024-08-30T10:15:30.000Z",
+    "refundedAt": "2020-04-30T10:20:00.000Z",
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-30T10:15:30.000Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
-  "processedAt": "2024-08-30T10:20:00.000Z",
+  "processedAt": "2020-04-30T10:20:00.000Z",
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-30T10:25:00.000Z",
-  "updatedAt": "2024-08-30T10:25:00.000Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -352,17 +343,16 @@ a6f8c7e",
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -383,7 +373,7 @@ a6f8c7e",
     "resourceType": "transaction",
     "productId": "e6d7f5c9-4d8a-4b8f-9e6c-2f7b6d9f8a7e",
     "productType": "platform.subscription",
-    "status": "updated",
+    "status": "created",
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
@@ -394,17 +384,16 @@ a6f8c7e",
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -425,7 +414,7 @@ a6f8c7e",
     "resourceType": "transaction",
     "productId": "d4c7b6f8-5c6d-4b8a-9e7f-2d7c4f6b9a8d",
     "productType": "platform.subscription",
-    "status": "void_failed",
+    "status": "succeeded",
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
@@ -436,17 +425,16 @@ a6f8c7e",
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -467,7 +455,7 @@ a6f8c7e",
     "resourceType": "transaction",
     "productId": "e6d7f5c9-4d8a-4b8f-9e6c-2f7b6d9f8a7e",
     "productType": "platform.subscription",
-    "status": "void_succeeded",
+    "status": "canceled",
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
@@ -475,20 +463,19 @@ a6f8c7e",
     "paymentMethod": "credit",
     "value": 49700,
     "splitProcessedAt": null,
-    "refundedAt": "2024-08-30T10:15:30.000Z",
+    "refundedAt": "2020-04-30T10:20:00.000Z",
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-30T10:15:30.000Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
-  "processedAt": "2024-08-30T10:20:00.000Z",
+  "processedAt": "2020-04-30T10:20:00.000Z",
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-30T10:25:00.000Z",
-  "updatedAt": "2024-08-30T10:25:00.000Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -515,20 +502,19 @@ a6f8c7e",
     "paymentMethod": "credit",
     "value": 49700,
     "splitProcessedAt": null,
-    "refundedAt": "2024-08-30T10:15:30.000Z",
+    "refundedAt": "2020-04-30T10:20:00.000Z",
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-30T10:15:30.000Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-30T10:20:00.000Z",
-  "updatedAt": "2024-08-30T10:20:00.000Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -549,7 +535,7 @@ a6f8c7e",
     "resourceType": "transaction",
     "productId": "24c073d4-3f42-4a9c-b649-2e9f0f734dbf",
     "productType": "platform.subscription",
-    "status": "commission_succeeded",
+    "status": "succeeded",
     "couponId": null,
     "transactionIds": [],
     "currency": "BRL",
@@ -561,17 +547,16 @@ a6f8c7e",
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-30T10:15:30.000Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-30T10:20:00.000Z",
-  "updatedAt": "2024-08-30T10:20:00.000Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
 
@@ -603,16 +588,17 @@ a6f8c7e",
     "refundedAt": null,
     "userId": "8cf86a4d-57b9-45e1-9f21-2f8b788f11ef",
     "metadata": null,
-    "whitelabel": "fpass-next",
-    "createdAt": "2024-08-29T21:02:43.032Z",
-    "updatedAt": "2024-08-29T21:02:43.032Z"
+    "whitelabel": "test",
+    "createdAt": "2020-04-30T10:20:00.000Z",
+    "updatedAt": "2020-04-30T10:20:00.000Z"
   },
   "processedAt": null,
   "retries": 0,
-  "isProcessing": false,
   "metadata": null,
-  "whitelabel": "fpass-next",
-  "createdAt": "2024-08-29T21:07:11.022Z",
-  "updatedAt": "2024-08-29T21:07:11.022Z"
+  "whitelabel": "test",
+  "createdAt": "2020-04-30T10:20:00.000Z",
+  "updatedAt": "2020-04-30T10:20:00.000Z"
 }
 ```
+
+Esta documentação foi elaborada para fornecer uma visão abrangente e detalhada dos eventos relacionados a transações de pagamento dentro da plataforma.
