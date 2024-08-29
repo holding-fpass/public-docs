@@ -30,6 +30,39 @@ O evento de pagamento de transação captura os detalhes essenciais de uma trans
 
 A seguir, são descritas as principais propriedades associadas a este evento, incluindo identificadores únicos, informações detalhadas sobre a transação e dados específicos sobre o parceiro e a plataforma whitelabel. Essas propriedades são essenciais para o rastreamento, auditoria e gerenciamento de transações dentro do ecossistema da plataforma.
 
+### Mapa de propriedades
+#### Propriedades
+- resourceId: Identificador único do evento. (String, UUID)
+- resourceType: Tipo de recurso associado ao evento. (String, "partner.event")
+- partnerId: Identificador único do parceiro. (String, UUID)
+- type: Tipo do evento. (String, "transaction.charged_back")
+- payload: Dados específicos da transação.
+  - resourceId: Identificador único da transação. (String, UUID)
+  - resourceType: Tipo do recurso dentro da payload, indicando que é uma transação. (String, "transaction")
+  - productId: Identificador único do produto associado à transação. (String, UUID)
+  - productType: Tipo de produto associado. (String, "platform.subscription")
+  - status: Status da transação. (String, "charged_back")
+  - couponId: Identificador do cupom aplicado, se houver. (String, UUID | null)
+  - transactionIds: Lista de IDs de transações relacionadas. (Array of Strings, UUID[])
+  - currency: Moeda da transação. (String, "BRL")
+  - description: Descrição adicional. (String)
+  - paymentMethod: Método de pagamento utilizado. (String, "credit")
+  - value: Valor da transação em centavos. (Integer)
+  - splitProcessedAt: Data de processamento da divisão de valores, se aplicável. (String, DateTime ISO 1601 | null)
+  - refundedAt: Data de reembolso da transação. (String, DateTime ISO 1601)
+  - userId: Identificador único do usuário associado à transação. (String, UUID)
+  - metadata: Metadados adicionais. (Object | null)
+  - whitelabel: Identificador da plataforma whitelabel. (String)
+  - createdAt: Data de criação da transação. (String, DateTime ISO 1601)
+  - updatedAt: Data da última atualização da transação. (String, DateTime ISO 1601)
+- processedAt: Data de processamento do evento. (String, DateTime ISO 1601 | null)
+- retries: Número de tentativas de envio do evento. (Integer)
+- isProcessing: Indicador se o evento está em processamento. (Boolean)
+- metadata: Metadados adicionais do evento. (Object | null)
+- whitelabel: Identificador da plataforma whitelabel. (String)
+- createdAt: Data de criação do evento. (String, DateTime ISO 1601)
+- updatedAt: Data da última atualização do evento. (String, DateTime ISO 1601)
+
 ### 1. **transaction.canceled**
 - **Descrição**: Este evento é disparado quando uma transação é cancelada (estornada). O cancelamento é feito pela plataforma devido a solicitações do usuário.
 
