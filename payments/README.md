@@ -161,9 +161,7 @@ Below are the key properties associated with this event, including unique identi
   "resourceId": "8eb29c4b-1d7c-4f3a-8c9f-7e54c4b44b29",
   "resourceType": "partner.event",
   "partnerId": "bca7d6c4-1b8a-4f25-99f4-d6a06f3b5f02",
-  "type":
-
- "transaction.failed",
+  "type": "transaction.failed",
   "payload": {
     "resourceId": "a3b2d7c4-5d8c-4a9f-b7d6-7a9f4b3e6d87",
     "resourceType": "transaction",
@@ -329,9 +327,7 @@ Below are the key properties associated with this event, including unique identi
   "partnerId": "bca7d6c4-1b8a-4f25-99f4-d6a06f3b5f02",
   "type": "transaction.succeeded",
   "payload": {
-    "resourceId": "
-
-e6d7f5c9-4d8a-4b8f-9e6c-2f7b6d9f8a7e",
+    "resourceId": "e6d7f5c9-4d8a-4b8f-9e6c-2f7b6d9f8a7e",
     "resourceType": "transaction",
     "productId": "d4c7b6f8-5c6d-4b8a-9e7f-2d7c4f6b9a8d",
     "productType": "platform.subscription",
