@@ -599,6 +599,6 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
 }
 ```
 
-Conclusão
+## Conclusão
 Esta documentação foi elaborada para fornecer uma visão abrangente e detalhada dos eventos relacionados a transações de pagamento dentro da plataforma.
 Seguindo os passos detalhados nesta documentação, você poderá implementar o sistema de pagamentos da plataforma Fpass de maneira eficiente e segura. Certifique-se de seguir todos os passos corretamente para garantir uma integração bem-sucedida.
