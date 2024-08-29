@@ -12,6 +12,12 @@ Para informações detalhadas sobre como integrar o Single Sign On (SSO) da Fpas
 
 - [Documentação de Single Sign On](https://github.com/holding-fpass/public-docs/blob/main/sso/README-ptbr.md)
 
+### Payments
+
+Para informações detalhadas sobre como integrar o sistema de pagamentos da Fpass, consulte a seguinte documentação:
+
+- [Documentação de pagamentos](https://github.com/holding-fpass/public-docs/blob/main/payments/README-ptbr.md)
+
 ## Contribuindo
 
 Aceitamos contribuições para melhorar a documentação de integração da Fpass. Se você tiver sugestões ou quiser adicionar novas seções, envie um pull request ou abra uma issue no GitHub.
