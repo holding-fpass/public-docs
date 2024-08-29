@@ -280,9 +280,7 @@ A seguir, são descritas as principais propriedades associadas a este evento, in
 #### **Estrutura do Evento (JSON)**
 ```json
 {
-  "resourceId": "b3e4d6f7-5c7a-4b8d-8f5e-2d7b4
-
-a6f8c7e",
+  "resourceId": "b3e4d6f7-5c7a-4b8d-8f5e-2d7b4a6f8c7e",
   "resourceType": "partner.event",
   "partnerId": "bca7d6c4-1b8a-4f25-99f4-d6a06f3b5f02",
   "type": "transaction.reversed",
