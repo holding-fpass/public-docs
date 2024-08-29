@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 Webhooks, also known as HTTP Callbacks, are a way to register to receive useful information at a specific URL of your choice.
 
